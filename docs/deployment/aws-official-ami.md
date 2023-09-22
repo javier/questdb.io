@@ -35,7 +35,7 @@ category. To launch a QuestDB instance:
 An information panel displays the ID of the QuestDB instance with launch
 configuration details and hints for locating the instance in the EC2 console.
 
-The default `user`` is `admin` and `password is `quest` to log in to the webconsole.
+The default `user` is `admin` and `password is `quest` to log in to the webconsole.
 
 ## QuestDB configuration
 
