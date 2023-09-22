@@ -39,7 +39,7 @@ The default `user` is `admin` and `password is `quest` to log in to the webconso
 
 ## QuestDB configuration
 
-You can connect to instance where QuestDB is deployed using SSH.
+You can connect to the instance where QuestDB is deployed using SSH.
 The server configuration file is at the following location on the AMI:
 
 ```bash
