@@ -6,25 +6,23 @@ description:
   continues uninterrupted.
 ---
 
-Capacity planning should be considered as part of the requirements of deploying
+It is important to plan and configure system resources before deploying
 QuestDB to forecast CPU, memory, network capacity, and a combination of these
-elements, depending on the expected demands of the system. This page describes
+resources based on the expected demands of the system. Learn more about
 configuring these system resources with example scenarios that align with both
 edge cases and common setup configurations.
 
-Most of the configuration settings referred to below except for OS settings are
-configured in QuestDB by either a `server.conf` configuration file or as
-environment variables. For more details on applying configuration settings in
-QuestDB, refer to the [configuration](/docs/reference/configuration/) page.
+Most of the configuration settings except for OS settings are configured in QuestDB
+using the `server.conf` configuration file or as environment variables.
+For more information about applying configuration settings in QuestDB, see the [configuration](/docs/reference/configuration/) page.
 
 To monitor various metrics of the QuestDB instances, refer to the
-[Prometheus monitoring page](/docs/third-party-tools/prometheus/) or the
-[Health monitoring page](/docs/operations/health-monitoring/).
+[Prometheus monitoring](/docs/third-party-tools/prometheus/) page or the
+[Health monitoring](/docs/operations/health-monitoring/) page.
 
 ## Storage and filesystem
 
-The following sections describe aspects to consider regarding the storage of
-data and file systems.
+Some of the aspects to consider regarding the storage of data and file systems.
 
 ### Supported filesystem
 
@@ -34,15 +32,13 @@ QuestDB officially supports the following filesystems:
 - EXT4
 - NTFS
 - OVERLAYFS (used by Docker)
-- XFS
-
+  
 Other file systems supporting
 [mmap](https://man7.org/linux/man-pages/man2/mmap.2.html) feature may work with
 QuestDB but they should not be used in production, as QuestDB does not run tests
 on them.
 
-When an unsupported file system is used, QuestDB logs show the following
-warning:
+When you use an unsupported file system, QuestDB logs this warning:
 
 ```
 -> UNSUPPORTED (SYSTEM COULD BE UNSTABLE)"
