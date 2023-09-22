@@ -35,8 +35,11 @@ category. To launch a QuestDB instance:
 An information panel displays the ID of the QuestDB instance with launch
 configuration details and hints for locating the instance in the EC2 console.
 
+The default `user`` is `admin` and `password is `quest` to log in to the webconsole.
+
 ## QuestDB configuration
 
+You can connect to instance where QuestDB is deployed using SSH.
 The server configuration file is at the following location on the AMI:
 
 ```bash
@@ -68,6 +71,8 @@ during startup:
 pg.user=admin
 pg.password=...
 ```
+To use the credentials that are randomly generated and stored in the `server.conf`file, you
+need to restart the database using the command `sudo systemctl restart questdb`.
 
 ### InfluxDB line protocol credentials
 
