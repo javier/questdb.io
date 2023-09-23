@@ -71,8 +71,7 @@ during startup:
 pg.user=admin
 pg.password=...
 ```
-To use the credentials that are randomly generated and stored in the `server.conf`file, you
-need to restart the database using the command `sudo systemctl restart questdb`.
+To use the credentials that are randomly generated and stored in the `server.conf`file, restart the database using the command `sudo systemctl restart questdb`.
 
 ### InfluxDB line protocol credentials
 
