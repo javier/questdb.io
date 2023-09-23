@@ -32,6 +32,7 @@ QuestDB officially supports the following filesystems:
 - EXT4
 - NTFS
 - OVERLAYFS (used by Docker)
+- XFS (`ftype=1` only)
   
 Other file systems supporting
 [mmap](https://man7.org/linux/man-pages/man2/mmap.2.html) feature may work with
